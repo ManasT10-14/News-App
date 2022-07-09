@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+.nav-container {
+  border: 2px solid black;
+  background-color: #153243;
+  display: flex;
+  height: 11vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-items {
+  display: flex;
+  height: 12vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-items li {
+  list-style: none;
+}
+.nav-item {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+.nav-item:hover {
+  color: #d3d0cb;
+}
+.logo {
+  padding: 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #d3d0cb;
+  cursor: pointer;
+}
+.logo .fa-newspaper {
+  margin-right: 0.5rem;
+  color: #d3d0cb;
+}

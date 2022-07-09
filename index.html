@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd0a4aebfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="operation-container.css">
+    <link rel="stylesheet" href="main-container.css">
+    <script src="./script.js" defer></script>
+    <title>NEWS</title>
+</head>
+
+<body>
+    <header class="nav-container">
+        <div class="logo"><i class="fa-solid fa-newspaper"></i>Manas News
+        </div>
+        <nav>
+            <ul class="nav-items">
+                <li> <a href="http://" class="nav-item" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li> <a href="http://" class="nav-item" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                <li> <a href="http://" class="nav-item" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                <li><a href="http://" class="nav-item" target="_blank" rel="noopener noreferrer">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="operation-container">
+        <div class="search-input-container">
+            <input type="text" class="operation search-input" placeholder="e.g. Messi">
+        </div>
+        <div class="category-dropdown-container dropdown">
+            <select name="category" id="news-category" class="operation category-dropdown">
+                <option class="placeholder" selected disabled value="">Category</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="general">General</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+            </select>
+        </div>
+        <div class="sortBy-dropdown-container dropdown">
+            <select name="sortBy" id="news-sortBy" class="operation sortBy-dropdown">
+                <option value="relevancy" selected>Relevancy</option>
+                <option value="popularity">Popularity</option>
+                <option value="publishedAt">Latest</option>
+            </select>
+        </div>
+        <div class="search-btn-container">
+            <button class="operation search-btn">Search</button>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+        <div class="news-container">
+            <ul class="news-list">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
